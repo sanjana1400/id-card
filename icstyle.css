@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #8282a4;
+  font-family: Arial, sans-serif;
+}
+
+.id-card {
+  width: 300px;
+  height: 420px;
+  border: 1px solid #222e94;
+  border-radius: 10px;
+  background: #c2aee1;
+  box-shadow: 15px -16px 15px rgba(0, 0, 0, 0.4);;
+  text-align: center;
+  overflow: hidden;
+}
+
+.id-card .header {
+  background-color: #534f71;
+  color: white;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.id-card .photo {
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #222e94;
+  background-image: url(./character-avatar-icon-vector-12800169.jpg);
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #534f71;
+}
+
+.id-card .details {
+  padding: 2px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 8px;
+}
+
+.id-card .details .field {
+  margin: 10px 0;
+}
+
+.id-card .details .field span {
+  font-weight: bold;
+}
+
+.id-card .footer {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #888;
+
+}
+
+.id-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
